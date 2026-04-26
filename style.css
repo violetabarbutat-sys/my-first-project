@@ -4,7 +4,7 @@
 }
 #hero {
     min-height: 700px;
-    background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 80%),url("images/hero_bg.png") no-repeat;                         
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 80%),url("hero_bg.png") no-repeat;                         
 
     background-size: 1150px auto;
 
