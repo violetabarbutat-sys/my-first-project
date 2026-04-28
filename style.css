@@ -16,6 +16,7 @@
 #hero .container {
     display: flex;
     justify-content:flex-start;
+    padding-left: 20px;
 }
 header .container {
     display: flex;
