@@ -95,15 +95,13 @@ body {
 }
 .hero-content {
     text-align: left;
-}
-.hero-content {
     max-width: 530px;
 }
 .hero-content > p:first-child {
-    font-size: 12px;
+    font-size: 18px;
 }
-.hero content p:last-child {
-    font-size: 8px;
+.hero-content p:last-child {
+    font-size: 14px;
     color: #7a7a7a;
     max-width: 300px;
 }
