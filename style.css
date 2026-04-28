@@ -1,21 +1,20 @@
 .container {
     max-width: 1240px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 #hero {
     min-height: 700px;
+    
     background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 80%),url("hero_bg.png") no-repeat right top;                         
 
     background-size: cover;
-
-    background-position: right 75px top 12px;
 
     display: flex;
     align-items: center;
 }
 #hero .container {
     display: flex;
-   
     justify-content:flex-start;
 }
 header .container {
@@ -37,6 +36,8 @@ nav ul {
     display: flex;
     gap: 20px;
     list-style: none;
+    margin: 0;
+    padding:0;
 }
 nav a {
     text-decoration: none;
@@ -61,17 +62,15 @@ body {
     align-items: center;
     gap: 10px;
 }
-.icons img {
-    background: transparent; 
-}
 .icons {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 28px;
 }
 .icons img {
     width: 32px;
     height: 32px;
+    transition: opacity 0. 3s ease;
 }
 .icons img:hover {
     opacity: 0.7;
@@ -88,8 +87,7 @@ body {
     border: none;
     cursor: pointer;
     text-decoration: none;
-}
-.hero-content .btn {
+    transizion: baskground-color 0. 3s ease;
     margin-bottom: 16px;
 }
 .btn:hover {
@@ -100,18 +98,14 @@ body {
 }
 .hero-content {
     max-width: 530px;
-    justify-content: flex-start;
-    margin-left: -520px;
-    font-size: 40px;
 }
 .hero-content > p:first-child {
     font-size: 18px;
-    color: #7a7a7a;
-    max-width: 300px;
-    margin: 0;
 }
 .hero content p:last-child {
     font-size: 12px;
+    color: #7a7a7a;
+    max-width: 300px;
 }
 .hero-content h1 {
     max-width: 530px;
