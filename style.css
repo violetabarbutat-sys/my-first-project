@@ -1,12 +1,12 @@
 .container {
-    max-width: 1200px;
+    max-width: 1240px;
     margin: 0 auto;
 }
 #hero {
     min-height: 700px;
-    background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 80%),url("hero_bg.png") no-repeat;                         
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 80%),url("hero_bg.png") no-repeat right top;                         
 
-    background-size: 1150px auto;
+    background-size: cover;
 
     background-position: right 75px top 12px;
 
@@ -70,8 +70,8 @@ body {
     gap: 15px;
 }
 .icons img {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
 }
 .icons img:hover {
     opacity: 0.7;
@@ -104,23 +104,32 @@ body {
     margin-left: -520px;
     font-size: 40px;
 }
-.hero-content p {
+.hero-content > p:first-child {
     font-size: 18px;
     color: #7a7a7a;
     max-width: 300px;
     margin: 0;
 }
+.hero content p:last-child {
+    font-size: 12px;
+}
 .hero-content h1 {
     max-width: 530px;
     font-family: PLAY, sans-serif;
-    font-weight: 530;
-    margin: 0 0 20px 0;
-     letter-spacing: 0;
-     color: #4184f7;
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 0.81;
+    letter-spacing: 0;
+    color: #4184f7;
+    margin: 0 0 40px 0;
 }
 .bold{
     font-weight: 700;
 }
 #about {
     padding: 80px 0;
+}
+ul. ol {
+    margin: 0;
+    padding-left: 0;
 }
