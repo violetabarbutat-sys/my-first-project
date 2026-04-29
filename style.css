@@ -33,7 +33,6 @@ body {
 #hero .container {
     display: flex;
     justify-content:flex-start;
-    padding-left: 0px;
 }
 header .container {
     display: flex;
@@ -121,8 +120,8 @@ body {
 .hero-content h1 {
     font-family: Play, sans-serif;
     font-weight: 700;
-    font-size: 140px;
-    line-height: 0. 9;
+    font-size: 80px;
+    line-height: 0.9;
     letter-spacing: 0;
     color: #4184f7;
     margin: 0 0 40px 0;
