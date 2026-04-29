@@ -6,7 +6,7 @@ body {
 .container {
     max-width: 1240px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 16px;
 }
 #hero [
    padding-top: 120px;
