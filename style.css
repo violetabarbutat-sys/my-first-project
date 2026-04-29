@@ -1,14 +1,30 @@
 body {
     margin: 0;
-    baskground-color: #ffffff;
-    font-family: Roboto", sans-serif;
+    background-color: #ffffff;
+    font-family: "Roboto", sans-serif;
 }
 .container {
     max-width: 1240px;
     margin: 0 auto;
     padding: 0 10px;
 }
-#hero [
+#hero {
+    padding-top: 120px;
+    min-height: 700px;
+    
+    baskground-position: right top;
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 80%),url("hero_bg.png") no-repeat right top;                         
+
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+}
+#hero .container {
+    display: flex;
+    justify-content: flex-start;
+}
+#hero {
    padding-top: 120px;
    display: flex;
    justify-content: flex-start;
@@ -19,26 +35,6 @@ body {
     gap: 40px;
     max-width: 530px;
 }
-#hero {
-    baskground-position: right top;
-    min-height: 700px;
-    
-    background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 80%),url("hero_bg.png") no-repeat right top;                         
-
-    background-size: cover;
-
-    display: flex;
-    align-items: center;
-}
-#hero .container {
-    display: flex;
-    justify-content:flex-start;
-}
-header .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 header {
     position: absolute;
     top: 0;
@@ -48,13 +44,23 @@ header {
     z-index: 10;
 
     background: rgba(255,255,255,0.7);
+    padding: 20px 0;
+}
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header img {
+    width: 74px;
+    height: 42px;
 }
 nav ul {
     display: flex;
     gap: 20px;
     list-style: none;
     margin: 0;
-    padding:0;
+    padding: 0;
 }
 nav a {
     text-decoration: none;
@@ -62,17 +68,6 @@ nav a {
 }
 nav a:hover {
     color: #2b7fff;
-}
-header {
-    padding: 20px 0;
-}
-header img {
-    width: 74px;
-    height: 42px;
-}
-body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
 }
 .logo {
     display: flex;
