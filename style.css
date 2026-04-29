@@ -1,10 +1,26 @@
+body {
+    margin: 0;
+    baskground-color: #ffffff;
+    font-family: Roboto", sans-serif;
+}
 .container {
     max-width: 1240px;
     margin: 0 auto;
     padding: 0 20px;
 }
+#hero [
+   padding-top: 120px;
+   display: flex;
+   justify-content: flex-start;
+}
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 530px;
+}
 #hero {
-    baskground-position:right top;
+    baskground-position: right top;
     min-height: 700px;
     
     background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 80%),url("hero_bg.png") no-repeat right top;                         
@@ -90,14 +106,9 @@ body {
     cursor: pointer;
     text-decoration: none;
     transizion: baskground-color 0. 3s ease;
-    margin-bottom: 16px;
 }
 .btn:hover {
     background-color: #1a5edb
-}
-.hero-content {
-    text-align: left: 20px;
-    max-width: 530px;
 }
 .hero-content > p:first-child {
     font-size: 18px;
@@ -108,11 +119,10 @@ body {
     max-width: 300px;
 }
 .hero-content h1 {
-    max-width: 530px;
     font-family: Play, sans-serif;
     font-weight: 700;
     font-size: 140px;
-    line-height: 0.81;
+    line-height: 0. 9;
     letter-spacing: 0;
     color: #4184f7;
     margin: 0 0 40px 0;
