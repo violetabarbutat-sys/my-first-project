@@ -30,6 +30,7 @@ body {
    justify-content: flex-start;
 }
 .hero-content {
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -92,7 +93,7 @@ nav a:hover {
     display: inline-block;
     background-color: #2b7fff;
     color: white;
-    padding: 16px 32px;
+    padding: 16px 24px;
     border-radius: 32px;
     font-size: 16px;
     font-weight: 600;
