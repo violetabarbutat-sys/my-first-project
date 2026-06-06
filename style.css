@@ -479,20 +479,16 @@ ol {
   padding: 0 80px;
 }
 
-.services-card-1,
-.services-card-2,
-.services-card-3 {
+.services-card {
+  --services-card-radius: 109.93px 3.68px 109.93px 3.68px;
   flex: 0 0 auto;
   width: 320px;
   height: 416px;
   padding: 0;
+  border-radius: var(--services-card-radius);
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.services-card {
-  border-radius: 109.93px 3.68px 109.93px 3.68px;
   perspective: 1000px;
 }
 
@@ -500,6 +496,7 @@ ol {
   position: relative;
   width: 100%;
   height: 100%;
+  border-radius: var(--services-card-radius);
   transition: transform 0.2s;
   transform-style: preserve-3d;
 }
@@ -530,7 +527,7 @@ ol {
   position: absolute;
   width: 100%;
   height: 100%;
-  border-radius: 109.93px 3.68px 109.93px 3.68px;
+  border-radius: var(--services-card-radius);
   backface-visibility: hidden;
   overflow: hidden;
 }
@@ -547,7 +544,7 @@ ol {
 
 .services-card-1 .services-card__front,
 .services-card-1 .services-card__back {
-  background-image: url("images/image 1580 (1).png");
+  background-image: url("images/services-1.png");
 }
 
 .services-card-2 .services-card__front,
@@ -560,12 +557,16 @@ ol {
   background-image: url("images/services-3.png");
 }
 
-.services-card__front::before,
 .services-card__back::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180.05deg, rgba(1, 28, 68, 0) 48.53%, rgba(1, 28, 68, 0.725825) 84.61%, #011C44 101.39%);
+  background: linear-gradient(
+    180deg,
+    #011C44 0%,
+    rgba(1, 28, 68, 0.72) 72.58%,
+    #011C44 100%
+  );
 }
 
 .services-card__back {
@@ -574,15 +575,12 @@ ol {
 }
 
 .services-category {
-  position: relative;
-  z-index: 2;
-  width: 180px;
-  margin: 0;
-  color: #ffffff;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 1.18;
-  text-align: center;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
 }
 
 .services-card__back ul {
@@ -981,9 +979,7 @@ ol {
     height: 260px;
   }
 
-  .services-card-1,
-  .services-card-2,
-  .services-card-3 {
+  .services-card {
     width: 320px;
     height: 416px;
   }
@@ -1113,9 +1109,7 @@ ol {
     max-width: 320px;
   }
 
-  .services-card-1,
-  .services-card-2,
-  .services-card-3 {
+  .services-card {
     width: 320px;
     height: 416px;
   }
@@ -1207,22 +1201,13 @@ ol {
   }
 
   .services-slider,
-  .services-card-1,
-  .services-card-2,
-  .services-card-3 {
+  .services-card {
     width: 320px;
     max-width: 320px;
   }
 
-  .services-card-1,
-  .services-card-2,
-  .services-card-3 {
+  .services-card {
     height: 416px;
-  }
-
-  .services-category {
-    width: 190px;
-    font-size: 21px;
   }
 }
 
